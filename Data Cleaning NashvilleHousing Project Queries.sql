@@ -142,7 +142,6 @@ Select *,
 					) row_num
 FROM NashvilleHousing )
 Select *
---DELETE
 From RowNumCTE
 Where row_num > 1
 Order by PropertyAddress
@@ -160,3 +159,4 @@ From NashvilleHousing
 
 ALTER TABLE NashvilleHousing
 DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress, SaleDate
+
